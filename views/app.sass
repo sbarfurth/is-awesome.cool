@@ -1,0 +1,49 @@
+html
+  height: 100%
+
+body
+  height: 100%
+  margin: 0
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
++keyframes(awesomeBackground)
+  0%
+    background-position: 0% 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0% 50%
+
+.youre
+  height: 100%
+  padding: 0
+  margin: 0
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+  align-items: center
+  justify-content: center
+  background: linear-gradient(270deg, #ff0000, #ffab00, #eeff00, #02ff00, #00f2ff, #0011ff, #c500ff, #ff00df)
+  background-size: 1600% 1600%
+  -webkit-animation: awesomeBackground 9s ease infinite
+  -moz-animation: awesomeBackground 9s ease infinite
+  -o-animation: awesomeBackground 9s ease infinite
+  animation: awesomeBackground 9s ease infinite
+
+  .awesome
+    text-align: center
+
+    h1
+      font-size: 3em
+
