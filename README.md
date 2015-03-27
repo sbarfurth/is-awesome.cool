@@ -6,7 +6,7 @@ Simply clone the repository, switch into it and run a few commands.
 
 ```
 bundle
-bundle exec sass views/app.sass views/app.css
+bundle exec sass assets/stylesheets/app.sass public/css/app.css
 bundle exec ruby app.rb
 ```
 
