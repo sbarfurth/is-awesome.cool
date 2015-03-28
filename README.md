@@ -6,6 +6,7 @@ Simply clone the repository, switch into it and run a few commands.
 
 ```
 bundle
+bundle exec compass compile
 bundle exec ruby app.rb
 ```
 
