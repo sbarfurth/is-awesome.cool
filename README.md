@@ -5,7 +5,7 @@ Installation is very simple.
 Simply clone the repository, switch into it and run a few commands.
 
 ```
-bundle
+bundle install
 bundle exec compass compile
 bundle exec ruby app.rb
 ```
