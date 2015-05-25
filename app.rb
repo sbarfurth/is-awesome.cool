@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'slim'
 
+configure { set :server, :puma }
+
 get '/' do
   redirect '/aFreshMelon'
 end
