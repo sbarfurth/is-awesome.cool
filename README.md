@@ -7,10 +7,15 @@ Simply clone the repository, switch into it and run a few commands.
 ```
 bundle install
 bundle exec compass compile
-bundle exec ruby app.rb
 ```
 
-That should do it. The app is available on ``http://localhost:4567``
+Then you may start the server using this:
+
+```
+bundle exec pumactl start
+```
+
+That should do it. The app is available on ``unix:///tmp/is-awesome.cool/sockets/puma.sock``
 
 # License
 
