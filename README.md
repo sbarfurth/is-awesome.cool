@@ -2,14 +2,7 @@
 
 Installation is very simple.
 
-Simply clone the repository, switch into it and run a few commands.
-
-```
-bundle install
-bundle exec compass compile
-```
-
-Then you may start the server using this:
+Simply clone the repository, switch into it and run the command to start the server.
 
 ```
 bundle exec pumactl start
