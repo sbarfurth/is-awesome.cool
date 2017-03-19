@@ -8,11 +8,12 @@
   <body>
     <div class="youre">
       <div class="awesome">
-        <h1 class="rainbow">You're awesome <span id="name">aFreshMelon</span> :D</h1>
+        <h1 class="rainbow">You're awesome <span id="name">aFreshMelon</span> <span id="emotion">:D</span></h1>
       </div>
     </div>
     <script>
-      document.getElementById('name').innerHTML = window.location.pathname.substr(1);
+      document.getElementById('name').innerHTML = window.location.host.split('.')[0];
+      document.getElementById('emotion').innerHTML = window.location.pathname.substr(1);
     </script>
   </body>
 </html>
