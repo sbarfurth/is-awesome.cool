@@ -2,17 +2,14 @@
 <html>
   <head>
     <title>You're awesome!</title>
-    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css" />
     <link async="" href="http://fonts.googleapis.com/css?family=Bangers" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <div class="youre">
       <div class="awesome">
-        <h1 class="rainbow">You're awesome <span id="name">Sebastian</span> :D</h1>
+        <h1 class="rainbow">You're awesome <span id="name">{{ name }}</span> :D</h1>
       </div>
     </div>
-    <script>
-      document.getElementById('name').innerHTML = window.location.pathname.substr(1);
-    </script>
   </body>
 </html>
